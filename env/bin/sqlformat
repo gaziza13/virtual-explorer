@@ -1,4 +1,4 @@
-#!/Users/dauren/Desktop/web-proj/virtual-explorer/env/bin/python3
+#!/Users/dauren/Desktop/web-proj/virtual-explorer/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
