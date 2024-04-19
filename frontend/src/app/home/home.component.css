@@ -1,0 +1,108 @@
+html,body {
+  height:100%;
+}
+.home-container {
+  background: url('../../assets/BgImage.png') no-repeat center center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+}
+
+.hero-section {
+  max-width: 600px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+
+.watch-video-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.watch-video-button .icon {
+  margin-right: 10px;
+  opacity: 100%;
+  width: 90px;
+  height: auto;
+}
+
+.search-section {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-section input {
+  border: none;
+  padding: 10px;
+  padding-left: 35px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-section input[type="text"]::placeholder,
+.search-section input[type="number"]::placeholder,
+.search-section input[type="date"]::placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.search-section input[type="text"],
+.search-section input[type="number"],
+.search-section input[type="date"] {
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.search-section input[type="text"] {
+  background-image: url('../../assets/icons/location-icon.png');
+}
+
+.search-section input[type="number"] {
+  background-image: url('../../assets/icons/guests-icon.png');
+}
+
+.search-section input[type="date"] {
+  background-image: url('../../assets/icons/date-icon.png');
+}
+
+.search-section button {
+  background-color: #FFDA32;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  opacity: 100%;
+  cursor: pointer;
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.search-button {
+  font-size: 16px;
+  padding: 12px 24px;
+}
