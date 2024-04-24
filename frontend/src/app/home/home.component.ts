@@ -13,17 +13,6 @@ import { City } from '../models/city.model';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit {
-  cities: City[] = [];
-
-  constructor(private cityService: CityService) {}
-
-  ngOnInit(): void {
-    this.cityService.getAllCities().subscribe(
-      (cities: City[]) => {
-        this.cities = cities;
-      },
-      error => console.error('Error fetching cities:', error)
-    );
-  }
+export class HomeComponent  {
+  
 }

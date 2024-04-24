@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { City } from '../models/city.model';
 import { CityService } from '../APIservices/city.service';
+import { CommonModule, NgFor } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { ToursComponent } from '../tours/tours.component';
 
 @Component({
   selector: 'app-popular-destinations',
   standalone: true,
-  // imports: [],
+  imports: [CommonModule, RouterModule, NgFor, ToursComponent],
   templateUrl: './popular-destinations.component.html',
   styleUrl: './popular-destinations.component.css'
 })
