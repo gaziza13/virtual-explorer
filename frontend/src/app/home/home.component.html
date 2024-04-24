@@ -20,9 +20,4 @@
       <button class="search-button">Search</button>
   </div>
 </div>
-<div *ngFor="let city of cities">
-  <h2>{{ city.name }}</h2>
-  <p>{{ city.description }}</p>
-  <img [src]="city.imageLink" alt="{{ city.name }}">
-</div>
-
+<app-popular-destinations></app-popular-destinations>

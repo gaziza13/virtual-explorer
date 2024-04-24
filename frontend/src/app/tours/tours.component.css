@@ -1,0 +1,32 @@
+.tour-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: space-between;
+    
+  }
+  
+  .tour {
+    width: 20%; 
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .tour img {
+    width: 80%;
+    height: auto;
+  }
+  
+  .tour h2 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .tour p {
+    margin: 5px 0;
+  }
+.price{
+  text-align: right;
+  font-weight: bolder;
+}

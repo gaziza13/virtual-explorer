@@ -4,7 +4,7 @@ import { PopularDestinationsComponent } from './popular-destinations/popular-des
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent},
-  { path: 'popular-destinations', component: PopularDestinationsComponent }
+  { path: 'home', component: HomeComponent}
+  // { path: 'popular-destinations', component: PopularDestinationsComponent }
 ];
 
