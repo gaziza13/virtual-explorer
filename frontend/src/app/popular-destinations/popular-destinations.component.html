@@ -1,20 +1,26 @@
-<div class = "head">
-    <h2>Explore Popular cities</h2>
-    <h4>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia<br>
-        consequat duis enim velit mollit</h4>
-</div>
-<div class="cities-container">
-    <div *ngFor="let city of cities">
-        <div class = "city">
-            <button><h3>{{ city.name }}</h3></button>
-        </div>
+<!-- Assuming this is inside your Angular component template file, e.g., city.component.html -->
+<div class="container">
+  <div class="header">
+    <h2>Explore Popular Cities</h2>
+    <p class="header-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+  </div>
+  <div class="cities-nav">
+    <button *ngFor="let city of cities" (click)="setActiveCity(city)"
+            [ngClass]="{'active': city === activeCity}" class="city-button">
+      {{ city.name }}
+    </button>
+  </div>
+  <div *ngIf="activeCity" class="main-content">
+    <div class="image-container">
+      <img [src]="activeCity.imageLink" alt="{{ activeCity.name }}">
     </div>
-</div>
-<div *ngFor="let city of cities">
-    <img [src]="city.imageLink" alt="{{ city.name }}">
-    <div class = "city-info">
-        <h2 class = "city-name">{{ city.name }}</h2>
-        <p>{{ city.description }}</p>
+    <div class="city-info">
+      <h1>{{ activeCity.name }}</h1>
+      <p class="city-description">{{ activeCity.description }}</p>
+      <div class="tags" >
+        {{ activeCity.tags }}
+      </div>
     </div>
+  </div>
+</div>
 <app-tours></app-tours>
-</div>

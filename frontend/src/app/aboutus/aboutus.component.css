@@ -1,0 +1,43 @@
+nav.navbar {
+  background-color: rgb(10, 31, 50);
+  border: 2px solid black;
+  width: 100%;
+}
+.about-section {
+  text-align: center;
+  padding: 50px;
+  background: #c37272;
+}
+
+.about-section h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.about-section p {
+  margin-bottom: 40px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+}
+
+.team-member {
+  flex-basis: 20%;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.team-member h2 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.team-member p {
+  font-size: 1em;
+}

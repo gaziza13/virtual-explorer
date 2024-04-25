@@ -7,4 +7,5 @@ export interface Tour{
     duration: string;
     categories: string[];
     imageLink: string;
+    reviews?: number;
 }

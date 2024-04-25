@@ -1,32 +1,75 @@
 .tour-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 30px;
-    justify-content: space-between;
-    
-  }
-  
-  .tour {
-    width: 20%; 
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  .tour img {
-    width: 80%;
-    height: auto;
-  }
-  
-  .tour h2 {
-    margin-top: 10px;
-    font-size: 18px;
-  }
-  
-  .tour p {
-    margin: 5px 0;
-  }
-.price{
-  text-align: right;
-  font-weight: bolder;
+  display: flex;
+  overflow-x: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tour {
+  flex: 0 0 auto;
+  width: 300px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 90%;
+  display: block;
+  margin-left: 16px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.tour-details {
+  padding: 15px;
+  text-align: left;
+}
+
+.tour-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tour-info p, .tour-review p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.duration:before {
+  content: url('../../assets/icons/Vector\ \(4\).png');
+}
+
+.transport:before {
+  content: url('../../assets/icons/Vector\ \(5\).png');
+}
+
+.family:before {
+  content: url('../../assets/icons/Vector\ \(3\).png');
+}
+
+
+.reviews {
+  font-size: 12px;
+  color: #666;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e67300;
+  margin-top: 10px;
+}
+
+.price span {
+  font-size: 14px;
+  font-weight: normal;
 }

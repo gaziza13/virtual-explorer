@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Volkhov:wght@400;700&display=swap');
+@font-face {
+  font-family: 'NicoMoji';
+  src: url('../../assets/Fonts/NicoMoji-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Arial', sans-serif; */
+}
+
+h3 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 5px;
+  top: 10px;
+  z-index: 1000;
+}
+
+.navbar-brand a {
+  color: #fff;
+  font-size: 26px;
+  text-decoration: none;
+  font-family: 'NicoMoji', sans-serif;
+}
+
+.navbar-menu a {
+  color: #fff;
+  margin-left: 3rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.navbar-menu a:hover {
+  color: #ddd;
+}
+
+.navbar-sign-in button {
+  background-color: #FFDA32;
+  border: none;
+  padding: 0px 20px;
+  cursor: pointer;
+  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 40px;
+  font-size: 14px;
+}
+
+.navbar-sign-in button:hover {
+  background-color: #e0a800;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar-sign-in button {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+}
