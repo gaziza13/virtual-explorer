@@ -3,4 +3,6 @@ export interface City {
   name: string;
   description: string;
   imageLink: string;
+  tags: string;
+  isActive?: boolean;
 }

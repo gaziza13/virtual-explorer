@@ -6,3 +6,5 @@ from .models import *
 admin.site.register(City)
 admin.site.register(Category)
 admin.site.register(Tour)
+admin.site.register(Tags)
+admin.site.register(Colors)

@@ -1,9 +1,20 @@
 <div class="tour-container">
-    <div class="tour" *ngFor="let tour of filteredTours">
-      <img [src]="tour.imageLink" alt="Tour Image">
-      <h2>{{ tour.name }}</h2>
-      <p>Duration: {{ tour.duration }} hours</p>
-      <p>{{ tour.categories }}</p>
-      <p class = "price" >${{ tour.price }}<br>per person</p>
+  <div class="tour" *ngFor="let tour of filteredTours">
+    <div class="image-container">
+      <img [src]="tour.imageLink" alt="{{ tour.name }}">
+    </div>
+    <div class="tour-details">
+      <h2 class="tour-title">{{ tour.name }}</h2>
+      <div class="tour-info">
+        <p><span class="icon duration"></span>Duration: {{ tour.duration }} hours</p>
+        <p><span class="icon transport"></span>Transport Facility</p>
+        <p><span class="icon family"></span>Family Plan</p>
+      </div>
+      <div class="tour-review">
+        <div class="stars"><img src="" alt=""></div>
+        <p class="reviews">{{ tour.reviews }} reviews</p>
+      </div>
+      <p class="price">${{ tour.price }}<br><span>per person</span></p>
     </div>
   </div>
+</div>

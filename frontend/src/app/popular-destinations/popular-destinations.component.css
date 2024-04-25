@@ -1,46 +1,84 @@
-img{
-    max-width: 1000px;
-    max-height: 500px;
-    display: block; 
-    margin: 0 auto;
-}
-.head{
-    text-align: center;
-    font-size: 20px;
+/* Assuming this is inside your Angular component CSS file, e.g., city.component.css */
+.container {
+  text-align: center;
+  width: 100%;
 }
 
-h4{
-    font-weight: lighter;
+.header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.city-name{
-    font-size: 50px;
+.header-description {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.cities-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.city-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: #e9ecef;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.city-button:hover,
+.city-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 1200px; /* This should match the actual width of your image */
+  height: auto;
+  margin-top: -4px; /* To overlap the bottom edge of the image */
 }
 
 .city-info {
-    border: 1px solid #8fa09f;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align:left;
+  width: 100%;
+  max-width: 1200px; /* This should match the width of your image */
+  background: white;
+  margin-top: -20px; /* To overlap the top edge of the city-info */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  z-index: 100; /* To ensure it overlays on top of the image */
 }
 
-.cities-container {
-    display: flex; 
-    margin: 0 auto;
+.city-info h1 {
+  font-size: 2rem;
 }
-  
-.city {
-    width: 120px; 
-    height: 50px;
-    border-radius: 10%; 
-    border: 1px solid #3da09b;
-    /* background-color: #ede2e2; */
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    position: relative;
-    left: 250px;
-    font-size: 15px;
+
+.city-description {
+  margin-top: 10px;
+  color: #6c757d;
+}
+
+.tags {
+  margin-top: 20px;
+}
+
+.tags .tag {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 15px;
+  background: #f2f2f2;
+  border-radius: 20px;
+  font-size: 14px;
 }

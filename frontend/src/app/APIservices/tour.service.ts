@@ -16,4 +16,8 @@ export class TourService {
     return this.http.get<Tour[]>(`${this.apiBaseUrl}/tours/`);
   }
 
+  addTour(): Observable<Tour[]> {
+    return this.http.get<Tour[]>(`${this.apiBaseUrl}/tours/`);
+  }
+
 }
