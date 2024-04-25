@@ -137,3 +137,9 @@ class ClearCartView(APIView):
             return Response({'message': 'Cart cleared successfully'}, status=status.HTTP_204_NO_CONTENT)
         
         return Response({'message': 'Cart was already empty'}, status=status.HTTP_204_NO_CONTENT)
+    
+class GetCartItemsView(APIView):
+    def get(self, request):
+        cart, created = Cart.objects.get_or_create(user=request.user)
+        serializer = CartSerializer(cart)
+        return Response(serializer.data)
