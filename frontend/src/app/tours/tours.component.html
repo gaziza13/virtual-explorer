@@ -14,7 +14,7 @@
         <div class="stars"><img src="" alt=""></div>
         <p class="reviews">{{ tour.reviews }} reviews</p>
       </div>
-      <p class="price">${{ tour.price }}<br><span>per person</span></p>
+      <p class="price" (click)="addCartItems(tour.id, 1)">
     </div>
   </div>
 </div>
